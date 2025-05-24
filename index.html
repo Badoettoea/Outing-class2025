@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outing Class Rundown</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <style>
+    body {
+      font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
+    }
+    .marquee {
+      display: inline-block;
+      white-space: nowrap;
+      animation: marquee 30s linear infinite;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    .swiper-slide img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .bounce {
+      display: inline-block;
+      animation: bounce 1.2s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      20% { transform: translateY(-18px); }
+      40% { transform: translateY(-10px); }
+      60% { transform: translateY(-4px); }
+      80% { transform: translateY(-2px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="relative flex size-full min-h-screen flex-col bg-gradient-to-b from-pink-100 to-blue-100 justify-between group/design-root overflow-x-hidden">
+    <!-- Header -->
+    <div class="relative flex items-center bg-pink-200 p-4 pb-2 justify-between overflow-hidden">
+      <img src="images/bus-bg.png" alt="Bus" class="absolute left-0 top-1/2 -translate-y-1/2 w-40 md:w-64 opacity-40 pointer-events-none select-none z-0" style="z-index:0;" />
+      <h1 class="text-2xl font-bold text-purple-800 marquee relative z-10 whitespace-nowrap">Outing Class 2025 - SDN BUNGO 3</h1>
+    </div>
+
+    <!-- Rundown List -->
+    <div class="p-4">
+      <h2 class="text-xl font-semibold text-purple-700 mb-4">Rundown</h2>
+      <div class="overflow-x-auto">
+        <table class="min-w-full bg-white rounded-lg shadow-md text-xs">
+          <thead>
+            <tr>
+              <th class="px-4 py-2 text-right text-purple-700 font-semibold border-b font-mono w-32 text-[10px]">Jam</th>
+              <th class="px-4 py-2 text-left text-purple-700 font-semibold border-b">Keterangan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="px-4 py-2 border-b align-top text-right font-mono whitespace-nowrap text-[10px]">06.00 - 06.30</td>
+              <td class="px-4 py-2 border-b">Kumpul, briefing, naik bus</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border-b align-top text-right font-mono whitespace-nowrap text-[10px]">06.30 - 09.30</td>
+              <td class="px-4 py-2 border-b">Perjalanan ke Watu Gajah</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border-b align-top text-right font-mono whitespace-nowrap text-[10px]">09.30 - 12.30</td>
+              <td class="px-4 py-2 border-b">
+                <ul class="list-disc list-inside ml-4">
+                  <li>Kolam Keceh & Waterboom (60 menit)</li>
+                  <li>🪨 Batu Gajah (10 menit) - Foto cepat di batu ikonik, naik ke punggung untuk panorama</li>
+                  <li>🌉 Jembatan Kayu & Rumah Pohon (15 menit) - Spot foto grup aesthetic</li>
+                  <li>👼 Angel Wings (15 menit) - Pose sayap malaikat dengan view lembah</li>
+                  <li>⛰️ Puncak Pandang (20 menit) - View 360° terbaik, foto landscape</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border-b align-top text-right font-mono whitespace-nowrap text-[10px]">12.30 - 13.00</td>
+              <td class="px-4 py-2 border-b">Makan siang (lunch box)</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border-b align-top text-right font-mono whitespace-nowrap text-[10px]">13.00 - 14.00</td>
+              <td class="px-4 py-2 border-b">Perjalanan ke Saloka Theme Park</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border-b align-top text-right font-mono whitespace-nowrap text-[10px]">14.00 - 15.00</td>
+              <td class="px-4 py-2 border-b">
+                Wahana Cepat (Antrean pendek):
+                <ul class="list-disc list-inside ml-4">
+                  <li>Taman Langit (sky bike dengan pemandangan)</li>
+                  <li>Dino Park (foto dengan dinosaurus animatronik)</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border-b align-top text-right font-mono whitespace-nowrap text-[10px]">15.00 - 15.30</td>
+              <td class="px-4 py-2 border-b">Sholat Ashar di musala Saloka</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border-b align-top text-right font-mono whitespace-nowrap text-[10px]">15.30 - 17.30</td>
+              <td class="px-4 py-2 border-b">
+                Wahana Seru (Prioritaskan favorit!):
+                <ul class="list-disc list-inside ml-4">
+                  <li>Rajawali (roller coaster)</li>
+                  <li>Banjir Banda (water ride, siapkan baju ganti)</li>
+                  <li>Pasar Setan (explore spot horor)</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border-b align-top text-right font-mono whitespace-nowrap text-[10px]">17.30 - 18.00</td>
+              <td class="px-4 py-2 border-b">Kumpul di theater Baru Klinting, cari spot terbaik</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border-b align-top text-right font-mono whitespace-nowrap text-[10px]">18.00 - 18.45</td>
+              <td class="px-4 py-2 border-b">🎭 Baru Klinting Show (Teater spektakuler dengan efek api & akrobat)</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border-b align-top text-right font-mono whitespace-nowrap text-[10px]">18.45 - 19.30</td>
+              <td class="px-4 py-2 border-b">Makan malam + beli merchandise</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border-b align-top text-right font-mono whitespace-nowrap text-[10px]">19.30 - 21.30</td>
+              <td class="px-4 py-2 border-b">Perjalanan pulang</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Watu Gajah Carousel -->
+    <div class="p-4">
+      <h2 class="text-xl font-semibold text-purple-700 mb-4">Watu Gajah Highlights</h2>
+      <div class="swiper watu-gajah-carousel">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/watu-gajah/3.webp" alt="Kolam Keceh">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/watu-gajah/batu-gajah.jpg" alt="Batu Gajah">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/watu-gajah/jembatan-kayu.jpg" alt="Jembatan Kayu">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/watu-gajah/angel-wings.jpg" alt="Angel Wings">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="mt-2 text-sm text-gray-600 overflow-hidden">
+        <div class="marquee">
+          ≈ Spot Wajib: Kolam Keceh & Waterboom, Kolam Terapi Ikan, Taman Bunga Vertikal, Patung Dinosaurus Raksasa / Lukisan Tembok 3D
+        </div>
+      </div>
+    </div>
+
+    <!-- Saloka Theme Park Carousel -->
+    <div class="p-4">
+      <h2 class="text-xl font-semibold text-purple-700 mb-4">Saloka Theme Park Highlights</h2>
+      <div class="swiper saloka-carousel">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/saloka/danau-baruklinting.jpg" alt="Danau Baruklinting">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/saloka/cakrawala.jpg" alt="Cakrawala">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/saloka/lumbung-ilmu.jpg" alt="Lumbung Ilmu Galileo">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/saloka/pakubumi.jpg" alt="Pakubumi">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/saloka/roller-coaster.jpg" alt="Roller Coaster">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="mt-2 text-sm text-gray-600 overflow-hidden">
+        <div class="marquee">
+          ≈ Spot Wajib Saloka Theme Park: Danau Baruklinting, Cakrawala: Bianglala raksasa, Lumbung Ilmu Galileo, Pakubumi: Wahana drop tower yang memacu adrenalin, Roller Coaster, Wahana rumah hantu
+        </div>
+      </div>
+    </div>
+
+    <!-- Bus Seating Layout -->
+    <div class="p-4">
+      <h2 class="text-xl font-semibold text-purple-700 mb-4">Denah Duduk Bus</h2>
+      
+      <!-- Bus 1 (50 Seats) -->
+      <div class="mb-8">
+        <h3 class="text-lg font-semibold text-purple-700 mb-4">Bus 1 (50 Seats)</h3>
+        <div class="flex flex-col md:flex-row gap-8 items-start">
+          <!-- Bus Layout Image -->
+          <div class="bg-white rounded-lg shadow-md p-4 flex-1 flex justify-center">
+            <img src="images/denah-bus-50.jpg" alt="Denah Kursi Bus 50 Seat" class="max-w-full h-auto rounded-lg border border-gray-200 shadow" />
+          </div>
+          <!-- Name List -->
+          <div class="bg-white rounded-lg shadow-md p-4 flex-1">
+            <h3 class="text-lg font-semibold text-purple-700 mb-4">Daftar Nama Bus 1</h3>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <ul class="space-y-2">
+                  <li>1. [B50# 1]</li>
+                  <li>2. [B50# 2]</li>
+                  <li>3. [B50# 3]</li>
+                  <li>4. [B50# 4]</li>
+                  <li>5. [B50# 5]</li>
+                  <li>6. [B50# 6]</li>
+                  <li>7. [B50# 7]</li>
+                  <li>8. [B50# 8]</li>
+                  <li>9. [B50# 9]</li>
+                  <li>10. [B50# 10]</li>
+                  <li>11. [B50# 11]</li>
+                  <li>12. [B50# 12]</li>
+                  <li>13. [B50# 13]</li>
+                  <li>14. [B50# 14]</li>
+                  <li>15. [B50# 15]</li>
+                  <li>16. [B50# 16]</li>
+                  <li>17. [B50# 17]</li>
+                  <li>18. [B50# 18]</li>
+                  <li>19. [B50# 19]</li>
+                  <li>20. [B50# 20]</li>
+                  <li>21. [B50# 21]</li>
+                  <li>22. [B50# 22]</li>
+                  <li>23. [B50# 23]</li>
+                  <li>24. [B50# 24]</li>
+                  <li>25. [B50# 25]</li>
+                </ul>
+              </div>
+              <div>
+                <ul class="space-y-2">
+                  <li>26. [B50# 26]</li>
+                  <li>27. [B50# 27]</li>
+                  <li>28. [B50# 28]</li>
+                  <li>29. [B50# 29]</li>
+                  <li>30. [B50# 30]</li>
+                  <li>31. [B50# 31]</li>
+                  <li>32. [B50# 32]</li>
+                  <li>33. [B50# 33]</li>
+                  <li>34. [B50# 34]</li>
+                  <li>35. [B50# 35]</li>
+                  <li>36. [B50# 36]</li>
+                  <li>37. [B50# 37]</li>
+                  <li>38. [B50# 38]</li>
+                  <li>39. [B50# 39]</li>
+                  <li>40. [B50# 40]</li>
+                  <li>41. [B50# 41]</li>
+                  <li>42. [B50# 42]</li>
+                  <li>43. [B50# 43]</li>
+                  <li>44. [B50# 44]</li>
+                  <li>45. [B50# 45]</li>
+                  <li>46. [B50# 46]</li>
+                  <li>47. [B50# 47]</li>
+                  <li>48. [B50# 48]</li>
+                  <li>49. [B50# 49]</li>
+                  <li>50. [B50# 50]</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bus 2 (33 Seats) -->
+      <div>
+        <h3 class="text-lg font-semibold text-purple-700 mb-4">Bus 2 (33 Seats)</h3>
+        <div class="flex flex-col md:flex-row gap-8 items-start">
+          <!-- Bus Layout Image -->
+          <div class="bg-white rounded-lg shadow-md p-4 flex-1 flex justify-center">
+            <img src="images/denah-bus-33.jpg" alt="Denah Kursi Bus 33 Seat" class="max-w-full h-auto rounded-lg border border-gray-200 shadow" />
+          </div>
+          <!-- Name List -->
+          <div class="bg-white rounded-lg shadow-md p-4 flex-1">
+            <h3 class="text-lg font-semibold text-purple-700 mb-4">Daftar Nama Bus 2</h3>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <ul class="space-y-2">
+                  <li>1. [B33# 1]</li>
+                  <li>2. [B33# 2]</li>
+                  <li>3. [B33# 3]</li>
+                  <li>4. [B33# 4]</li>
+                  <li>5. [B33# 5]</li>
+                  <li>6. [B33# 6]</li>
+                  <li>7. [B33# 7]</li>
+                  <li>8. [B33# 8]</li>
+                  <li>9. [B33# 9]</li>
+                  <li>10. [B33# 10]</li>
+                  <li>11. [B33# 11]</li>
+                  <li>12. [B33# 12]</li>
+                  <li>13. [B33# 13]</li>
+                  <li>14. [B33# 14]</li>
+                  <li>15. [B33# 15]</li>
+                  <li>16. [B33# 16]</li>
+                  <li>17. [B33# 17]</li>
+                </ul>
+              </div>
+              <div>
+                <ul class="space-y-2">
+                  <li>18. [B33# 18]</li>
+                  <li>19. [B33# 19]</li>
+                  <li>20. [B33# 20]</li>
+                  <li>21. [B33# 21]</li>
+                  <li>22. [B33# 22]</li>
+                  <li>23. [B33# 23]</li>
+                  <li>24. [B33# 24]</li>
+                  <li>25. [B33# 25]</li>
+                  <li>26. [B33# 26]</li>
+                  <li>27. [B33# 27]</li>
+                  <li>28. [B33# 28]</li>
+                  <li>29. [B33# 29]</li>
+                  <li>30. [B33# 30]</li>
+                  <li>31. [B33# 31]</li>
+                  <li>32. [B33# 32]</li>
+                  <li>33. [B33# 33]</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notes Section -->
+    <div class="p-4">
+      <h2 class="text-xl font-semibold text-purple-700 mb-4">Catatan</h2>
+      <ul class="list-disc list-inside text-gray-700 bg-white rounded-lg shadow-md p-4">
+        <li>Pakaian olahraga</li>
+        <li>Pakaian ganti</li>
+        <li>Handuk portable</li>
+        <li>Kantong plastik wadah pakaian basah</li>
+        <li>Snack ringan</li>
+        <li>Minuman cadangan</li>
+      </ul>
+    </div>
+
+    <!-- Initialize Swiper -->
+    <script>
+      new Swiper('.watu-gajah-carousel', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: { el: '.swiper-pagination', clickable: true },
+        breakpoints: {
+          640: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 }
+        },
+        autoplay: {
+          delay: 10000,
+          disableOnInteraction: false
+        }
+      });
+      new Swiper('.saloka-carousel', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: { el: '.swiper-pagination', clickable: true },
+        breakpoints: {
+          640: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 }
+        },
+        autoplay: {
+          delay: 10000,
+          disableOnInteraction: false
+        }
+      });
+    </script>
+  </div>
+</body>
+</html>
